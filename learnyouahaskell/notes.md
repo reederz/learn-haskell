@@ -31,3 +31,8 @@ Types and Typeclasses
 - Some types: Int, Integer, Float, Double, Bool, Char
 - Int vs Integer : bounded vs unbounded
 - Type variables are used to indicate that any type can be used for variable (polymorphic functions)
+
+Syntax in Functions
+===================
+- most of the stuff is in SyntaxInFunctions.hs
+- difference between *where* and *let* bindings - *where* is just syntactic sugar, whereas *let* is an expression which you can use anywhere (just like if/then/else) 
