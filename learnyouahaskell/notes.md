@@ -20,3 +20,14 @@ Starting Out
 - tuples have fixed number of elements. The elements can have different types
 - a set of all right triangles with perimeter of 24:
   let rightTriangles24 = [ (a,b,c) | c <- [1..10], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2, a+b+c == 24]
+
+Types and Typeclasses
+=====================
+- static type system
+- type inference
+- :t command in ghci to get type of variable
+- it's best to give explicit type declarations to all the functions
+- if unsure about type declaration of a function, you can write it without it and use :t on it
+- Some types: Int, Integer, Float, Double, Bool, Char
+- Int vs Integer : bounded vs unbounded
+- Type variables are used to indicate that any type can be used for variable (polymorphic functions)
