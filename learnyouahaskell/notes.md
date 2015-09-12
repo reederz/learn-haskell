@@ -35,4 +35,10 @@ Types and Typeclasses
 Syntax in Functions
 ===================
 - most of the stuff is in SyntaxInFunctions.hs
-- difference between *where* and *let* bindings - *where* is just syntactic sugar, whereas *let* is an expression which you can use anywhere (just like if/then/else) 
+- difference between *where* and *let* bindings - *where* is just syntactic sugar, whereas *let* is an expression which you can use anywhere (just like if/then/else)
+
+
+Recursion
+=========
+- recursion is important in haskell because it's declarative (we don't have loops) and repetitive functions have to be defined in terms of themselves
+- we can use recursion to produce infinite data structures (E.g. infine list). This is OK in haskell because it's lazy and it only goes as far as it absolutely needs to. So you can pass an infinite data structure to a function which "cuts off" a finite part of it and your program will be just fine.
