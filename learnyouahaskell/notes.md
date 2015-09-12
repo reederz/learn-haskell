@@ -42,3 +42,14 @@ Recursion
 =========
 - recursion is important in haskell because it's declarative (we don't have loops) and repetitive functions have to be defined in terms of themselves
 - we can use recursion to produce infinite data structures (E.g. infine list). This is OK in haskell because it's lazy and it only goes as far as it absolutely needs to. So you can pass an infinite data structure to a function which "cuts off" a finite part of it and your program will be just fine.
+
+Higher order functions
+======================
+- higher order function is a function which takes a function as a parameter or returns a function
+- all functions in Haskell take in only 1 parameter. Multiple parameters are supported by means of "currying" (series of partial applications of functions)
+- lambdas are anonymous functions which you only want to use once (usually as a parameter of a higher order function)
+- you can pattern match in lambdas but you can't define several patterns for 1 parameter, so be careful not to fall through the patterns because it can result in an error
+- scanl and scanr are like foldl and foldr, only they report all the intermediate accumulator states in the form of a list.
+- $ - function application. It makes function application "left associative" and it sometimes makes sense to use it for readability purposes E.g. sqrt $ 4 + 10 + 2  is the same as sqrt (4 + 10 + 2) and results in 4. Whereas sqrt 4 + 10 + 2 adds 10 and 2 and sqrt of 4 (right associative) which results in 14.
+- we can use . (dot) to do function composition in haskell. E.g. negate . (+3)
+  returns a function which add 3 to a number and then negates it
